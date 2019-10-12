@@ -1,0 +1,34 @@
+{
+    "territory": [
+        {
+          "type": "web",
+          "url": "https://detail.tmall.com/item.htm?spm=a1z10.3-b-s.w4011-15676986376.52.2a3b6431onoXca&id=596918473481&rn=cf01e9642eb3cfd998d08f5916ac6000&abbucket=5&sku_properties=1627207:28341",
+          "checkpoints": [
+              {
+                  "id": "data-spm-anchor-id=\"a220o.1000855.0.i3.271a1cd9IVJw9i\"",
+                  "check": "clickable"
+              }
+          ],
+          "remind": {
+              "reminders": [
+                 "mymail" 
+              ],
+              "content": "$url",
+              "frequency": "15m"
+          }
+        } 
+    ],
+
+    "equipment": {
+        "reminder": {
+            "mymail": {
+                "type": "email",
+                "address": "2231066362@qq.com"
+            }
+        },
+        "email_sender": {
+            "address": "2231066362@qq.com",
+            "password": ""
+        }
+    }
+}

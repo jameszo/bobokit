@@ -1,9 +1,7 @@
 #!/bin/sh
 
 gitpull(){
-    git add ./*
-    git commit -m "Save daily." .
-    git push origin master
+    git pull origin master
 }
 
 cd ~/code

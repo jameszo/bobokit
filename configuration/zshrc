@@ -5,10 +5,11 @@ export HOME="/Users/BoBoBo"
 
 DEFAULT_USER="BoBoBo"
 
-plugins=(git autojump)
 bindkey -v
 
+plugins=(git autojump)
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 alias tree="find . ! -path '*svn*' ! -path '*lib*' ! -path '*target*' ! -path '*class' ! -path '*pyc' ! -path '*idea*' ! -path '*swp' ! -path '*iml' | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 export PATH="${HOME}/code/bobokit/daily:${HOME}/code/bobokit/sh:$PATH"

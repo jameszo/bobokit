@@ -3,7 +3,7 @@
 gitpull(){
     git add ./*
     git commit -m "Save daily." .
-    git pull origin master
+    git push origin master
 }
 
 cd ~/code

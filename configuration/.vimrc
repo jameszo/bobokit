@@ -114,3 +114,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+vmap y :w !pbcopy<CR><CR>
+nmap p :r !pbpaste<CR><CR>

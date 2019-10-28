@@ -7,7 +7,6 @@ git clone git@github.com:jameszo/markdown-css.git ~
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew cask install java
-brew install plantuml
-brew install telnet
-brew install nmap
+#For docker in macos
+brew cask install osxfuse
+brew install sshfs

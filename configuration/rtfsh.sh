@@ -13,6 +13,9 @@ gitclone(){
 
 gitclone https://github.com/yomonah/vue-demo.git $dir_rtfsc/example/vue-demo
 gitclone https://github.com/AndreiD/Flask-Easy-Template.git $dir_rtfsc/example/Flask-Easy-Template
+gitclone https://github.com/362228416/openresty-web-dev.git $dir_rtfsc/example/openresty-web-dev
+gitclone https://github.com/zhangkg/openresty-demo.git $dir_rtfsc/example/openresty-demo
+gitclone https://github.com/ketzacoatl/explore-openresty.git $dir_rtfsc/example/explore-openresty
 
 gitclone https://github.com/spring-projects/spring-data-redis.git $dir_rtfsc/spring-data-redis
 gitclone https://github.com/netty/netty.git $dir_rtfsc/netty

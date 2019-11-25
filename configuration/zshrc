@@ -1,7 +1,7 @@
 ZSH_THEME="ys"
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-export HOME="/Users/BoBoBo"
+export HOME="/Users/bobobo"
 
 DEFAULT_USER="BoBoBo"
 

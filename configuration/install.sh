@@ -3,6 +3,7 @@
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
 git clone git@github.com:jameszo/markdown-css.git ~/markdown-css
+git clone git@github.com:jameszo/docs.git ~/code/docs
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 

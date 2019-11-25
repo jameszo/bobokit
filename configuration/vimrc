@@ -10,14 +10,16 @@ Plugin 'xml.vim'
 Plugin 'html-xml-tag-matcher'
 Plugin 'Markdown'
 Plugin 'mattn/emmet-vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'jameszo/vim-snippets'
 Plugin 'SimpylFold'
 Plugin 'w0rp/ale'
 Plugin 'tomlion/vim-solidity'
 Plugin 'go.vim'
 Plugin 'axiaoxin/vim-json-line-format'
 Plugin 'aklt/plantuml-syntax'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'jameszo/vim-snippets'
 call vundle#end()
 filetype plugin indent on
 
@@ -68,9 +70,9 @@ endfunction
 let g:ctrlp_working_path_mode = '0'
 
 let g:vimporter_java_roots =  [
-\ '/Users/James/code/docs/spring-boot-docs-1.5.8/api', 
-\ '/Users/James/code/docs/spring-framework-5/javadoc-api',
-\ '/Users/James/code/docs/jdk8/api']
+\ '~/code/docs/spring-boot-docs-1.5.8/api', 
+\ '~/code/docs/spring-framework-5/javadoc-api',
+\ '~/code/docs/jdk8/api']
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"

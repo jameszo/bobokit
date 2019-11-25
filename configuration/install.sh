@@ -14,6 +14,8 @@ brew install docker
 brew install docker-machine
 brew install docker-swarm
 brew install docker-machine-driver-xhyve
+sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 
 brew install autojump
 brew cask install dash

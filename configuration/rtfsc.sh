@@ -14,6 +14,7 @@ gitclone https://github.com/spring-projects/spring-data-redis.git $dir_rtfsc/spr
 gitclone https://github.com/spring-projects/spring-integration.git $dir_rtfsc/spring-integration
 gitclone https://github.com/spring-projects/spring-batch.git $dir_rtfsc/spring-batch
 gitclone https://github.com/spring-projects/spring-boot.git $dir_rtfsc/spring-boot
+gitclone https://github.com/spring-projects/spring-data-jpa.git $dir_rtfsc/spring-data-jpa
 gitclone https://github.com/apache/commons-pool.git $dir_rtfsc/commons-pool
 gitclone https://github.com/apache/commons-lang.git $dir_rtfsc/commons-lang
 gitclone https://github.com/apache/commons-io.git $dir_rtfsc/commons-io

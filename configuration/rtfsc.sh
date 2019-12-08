@@ -66,7 +66,6 @@ gitclone https://github.com/spring-projects/spring-integration-samples.git $dir_
 gitclone https://github.com/yrojha4ever/JavaStud.git $dir_rtfsc/example/JavaStud
 gitclone https://github.com/epam-mooc/threadpoolexecutor-demo.git $dir_rtfsc/example/threadpoolexecutor-demo
 gitclone https://github.com/AndrewMalitchuk/ftp-client.git $dir_rtfsc/example/ftp-client
-gitclone https://github.com/jameszo/sample-spring-microservices-new.git $dir_rtfsc/example/sample-spring-microservices-new
 gitclone https://github.com/narutom9527/Sprint_Date_JPA_houseDemo.git $dir_rtfsc/example/Sprint_Date_JPA_houseDemo
 gitclone https://github.com/ryanhaveson/file-nio-sample.git $dir_rtfsc/example/file-nio-sample
 gitclone https://github.com/harveyqing/BearDiary.git $dir_rtfsc/example/BearDiary

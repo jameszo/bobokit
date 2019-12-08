@@ -27,5 +27,6 @@ sudo ln -sfn /usr/local/opt/openjdk@12/libexec/openjdk.jdk /Library/Java/JavaVir
 brew install plantuml
 brew install pandoc
 brew install nmap
+brew install ctags-exuberant
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

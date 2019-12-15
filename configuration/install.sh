@@ -5,7 +5,7 @@ git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
 git clone git@github.com:jameszo/markdown-css.git ~/markdown-css
 git clone git@github.com:jameszo/docs.git ~/code/docs
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew cask install osxfuse
 brew install sshfs

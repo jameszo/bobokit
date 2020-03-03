@@ -22,7 +22,7 @@ brew cask install dash
 brew cask install iterm2
 
 brew install openjdk
-sudo ln -sfn /usr/local/opt/openjdk@12/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-12.jdk
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 brew install plantuml
 brew install pandoc

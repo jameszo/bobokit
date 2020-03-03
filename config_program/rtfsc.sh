@@ -34,6 +34,7 @@ gitclone https://github.com/openresty/openresty.git $dir_rtfsc/openresty
 gitclone https://github.com/titansec/OpenWAF.git $dir_rtfsc/OpenWAF
 gitclone https://github.com/orlabs/orange.git $dir_rtfsc/orange
 
+gitclone https://github.com/madrobby/zepto.git $dir_rtfsc/zepto
 #----------Demo----------
 gitclone https://github.com/anxpp/Java-IO.git $dir_rtfsc/example/Java-IO
 gitclone https://github.com/362228416/openresty-web-dev.git $dir_rtfsc/example/openresty-web-dev

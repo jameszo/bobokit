@@ -29,4 +29,6 @@ brew install pandoc
 brew install nmap
 brew install ctags-exuberant
 
+brew install mysql-connector-c++
+
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

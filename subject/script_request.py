@@ -75,16 +75,4 @@ class ScriptRequest:
 
         return (True, response.content)
 
-    def dealPlaceholder(self, s):
-        matches = re.findall(r'\${[^}]*}', s)
-        for m in matches:
-            if None == m : break
-            v = m[2:-1]
-            print("Dealing placeholder: " + v)
-            if v.startswith('&'):
-                var_name = v[1:]
-                holder_value = self.script_context[var_name]
-                print "Find holder_value: " + holder_value
-                s = s.replace(m, holder_value)
-                print "After dealPlaceholder: " + s
-        return s
+    

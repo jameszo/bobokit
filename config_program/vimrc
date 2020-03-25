@@ -20,6 +20,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'jameszo/vim-snippets'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
@@ -116,3 +117,6 @@ let g:tagbar_type_go = {
 
 vmap by :w !pbcopy<CR><CR>
 nmap bp :r !pbpaste<CR><CR>
+
+highlight PMenu ctermfg=0 ctermbg=242 guifg=black guibg=darkgrey
+highlight PMenuSel ctermfg=242 ctermbg=8 guifg=darkgrey guibg=black

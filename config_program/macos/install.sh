@@ -7,6 +7,8 @@ git clone git@github.com:jameszo/docs.git ~/code/docs
 
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install vim
+
 brew cask install osxfuse
 brew install sshfs
 

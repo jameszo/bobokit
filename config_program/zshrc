@@ -17,8 +17,8 @@ export PATH="${HOME}/code/bobokit/daily:${HOME}/code/bobokit/sh:$PATH"
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+export JAVA_HOME=/usr/local/Cellar/openjdk/13.0.2+8_2
 #export JAVA_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,address=8008,server=y,suspend=y"
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib

@@ -7,7 +7,6 @@ git clone git@github.com:jameszo/docs.git ~/code/docs
 
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install vim
 
 brew cask install osxfuse
 brew install sshfs
@@ -32,5 +31,11 @@ brew install nmap
 brew install ctags-exuberant
 
 brew install mysql-connector-c++
+
+brew install vim
+brew install cmake
+brew install golang
+brew install npm
+brew install wget
 
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

@@ -31,7 +31,6 @@ gitclone https://github.com/apache/commons-net.git $dir_rtfsc/commons-net
 gitclone https://github.com/quartz-scheduler/quartz.git $dir_rtfsc/quartz
 gitclone https://github.com/netty/netty.git $dir_rtfsc/netty
 gitclone https://github.com/xetorthio/jedis.git $dir_rtfsc/jedis
-gitclone git://git.apache.org/hadoop.git $dir_rtfsc/hadoop
 
 gitclone https://github.com/kennethreitz/requests.git $dir_rtfsc/requests
 gitclone https://github.com/scrapy/scrapy.git $dir_rtfsc/scrapy

@@ -1,13 +1,44 @@
 # -*- coding: UTF-8 -*-
 
-# author:   James Zo
-# email:    james_email@sina.cn
+import MySQLdb
+import abc
 
+class DB(metaclass=abc.ABCMeta):
 
-from py.file import *
-from py.mysql import *
+    def __init__(self, host, username, passwd, port):
+        self.conn = self.connect(host, username, passwd, port)
 
-class MysqlTable(Mysql, File):
+    @abc.abstractmethod
+    def connect(host, username, passwd, port):pass
+
+    def execute(self, sql):
+        cur = self.conn.cursor()
+        try:
+            cur.execute(sql)
+            self.conn.commit()
+        except:
+            self.conn.rollback();
+        cur.close()
+
+    def query_res(self, sql, params):
+        cur = self._conn.cursor()
+        cur.execute(sql, params)
+        index = cur.description
+        rows = []
+        cur_set = cur.fetchall();
+        if cur_set is None:
+            return rows
+        for res in cur_set:
+            row = {}
+            for i in range(len(index)):
+                row[index[i][0]] = res[i]
+            rows.append(row) 
+        self._conn.commit()
+        cur.close()
+        return rows
+
+    def close(self):
+        self.conn.close()
 
     def __init__(self, host, user, passwd, sql):
         Mysql.__init__(self, host, user, passwd)
@@ -15,9 +46,6 @@ class MysqlTable(Mysql, File):
         self._description = self.view(sql)
         for i in range(len(self._description)):
             self._header += [{'name':self._description[i][0]}]
-
-    def get_header(self):
-        return self._header
 
     def next_row(self):
         cur_one = self._cur.fetchone()
@@ -29,10 +57,6 @@ class MysqlTable(Mysql, File):
         self._cur = self._conn.cursor()
         self._cur.execute(sql)
         return self._cur.description
-
-    def close(self):
-        self._cur.close()
-        self._conn.close()
 
     def _write_header(self):
         if not self._header:
@@ -66,12 +90,14 @@ class MysqlTable(Mysql, File):
         self.write_line(line_str)
         return row
 
-    def _write_content(self):
-        while self._write_row() :
-            pass
 
-    def write(self, file_full_path):
-        File.__init__(self, file_full_path)
-        self._write_header()
-        self._write_content()
+class Mysql(DB):
 
+    def __init__(self, host, user, passwd, port=3306):
+        self._conn = MySQLdb.connect(
+                host=host,
+                port = port,
+                user=user,
+                passwd=passwd,
+                charset="utf8"
+                )

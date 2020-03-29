@@ -1,7 +1,9 @@
 # -*- coding: UTF-8 -*-
 
-# author:   BoBoBo
-# email:    bobobonet@hotmail.com 
+"""
+    author:   BoBoBo
+    email:    bobobonet@hotmail.com 
+"""
 
 import os
 import codecs
@@ -11,7 +13,7 @@ if sys.getdefaultencoding() != 'utf-8':
     reload(sys)
     sys.setdefaultencoding('utf-8')
 
-def traverse_path_line(path, deal):
+def traverse_line(path, deal):
     file_list = os.listdir(path)
     for f in file_list:
         file_path = os.path.join(path, f)
@@ -22,7 +24,7 @@ def traverse_path_line(path, deal):
                 for line in fo:
                     deal(line)
 
-def traverse_path_file(path, deal):
+def traverse_file(path, deal):
     file_list = os.listdir(path)
     for f in file_list:
         file_path = os.path.join(path, f)
@@ -32,7 +34,7 @@ def traverse_path_file(path, deal):
             with open(file_path) as fo:
                 deal(fo.read())
 
-def make_windows_copy(file_path, copy_path):
+def make_win32_copy(file_path, copy_path):
     fo = open(file_path, 'r')
     copy_file = open(copy_path, 'w')
     index_src = fo.tell()
@@ -45,7 +47,7 @@ def make_windows_copy(file_path, copy_path):
         line = fo.readline()
     fo.close()
 
-class BaseTextFile:
+class File:
     def __init__(self, file_path, access_mode='a'):
         self.fo = open(file_path, access_mode)
         (path, file_name) = os.path.split(file_path);  
@@ -57,7 +59,7 @@ class BaseTextFile:
         self.extension = extension
 
     def write_by_line(self, line, flush_now):
-        line = line + "\r\n"
+        line = line + os.linesep
         self.fo.write(line)
         if flush_now:
             self.fo.flush()

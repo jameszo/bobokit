@@ -38,4 +38,7 @@ brew install golang
 brew install npm
 brew install wget
 
+brew cask install firefox
+brew cask install google-chrome
+
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

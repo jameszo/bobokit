@@ -13,26 +13,20 @@ if sys.getdefaultencoding() != 'utf-8':
     reload(sys)
     sys.setdefaultencoding('utf-8')
 
-def traverse_line(path, deal):
-    file_list = os.listdir(path)
-    for f in file_list:
-        file_path = os.path.join(path, f)
-        if os.path.isdir(file_path):
-            self.traverse_path_count(file_path)
-        else:
-            with open(file_path) as fo:
-                for line in fo:
-                    deal(line)
-
 def traverse_file(path, deal):
-    file_list = os.listdir(path)
-    for f in file_list:
-        file_path = os.path.join(path, f)
+    for file_path in list(map(os.path.join(path, f), os.listdir(path))):
         if os.path.isdir(file_path):
             self.traverse_path_count(file_path)
         else:
             with open(file_path) as fo:
-                deal(fo.read())
+                deal(fo)
+
+def traverse_line(path, dealline):
+    def deal(fo):
+        for line in fo:
+            dealline(line)
+
+    traverse_file(path, deal)
 
 def make_win32_copy(file_path, copy_path):
     fo = open(file_path, 'r')

@@ -13,6 +13,7 @@ brew install sshfs
 
 brew install docker
 brew install docker-machine
+brew install docker-compose
 brew install docker-swarm
 brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve

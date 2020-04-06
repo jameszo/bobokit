@@ -27,3 +27,4 @@ export PYTHONPATH=${HOME}/code
 
 export PATH="${HOME}/maven/bin:$PATH"
 export MAVEN_OPTS="-Xms1024m -Xmx3024m"
+export PATH=/usr/local/Cellar/mysql-client/8.0.18/bin:$PATH

@@ -19,7 +19,7 @@ Plugin 'aklt/plantuml-syntax'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'SirVer/ultisnips'
-Plugin 'jameszo/vim-snippets'
+Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
@@ -42,6 +42,7 @@ let g:ycm_key_list_select_completion = ['<C-j>', '<Down>', '<tab>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
 let g:SuperTabDefaultCompletionType = "context"
 let g:ycm_seed_identifiers_with_syntax=1
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 let g:UltiSnipsExpandTrigger="<c-o>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"

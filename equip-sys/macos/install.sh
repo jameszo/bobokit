@@ -2,6 +2,7 @@
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
+git clone git@github.com:jameszo/snippets.git ~/.vim/snippets
 git clone git@github.com:jameszo/markdown-css.git ~/markdown-css
 git clone git@github.com:jameszo/docs.git ~/code/docs
 
@@ -41,5 +42,7 @@ brew install wget
 
 brew cask install firefox
 brew cask install google-chrome
+
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

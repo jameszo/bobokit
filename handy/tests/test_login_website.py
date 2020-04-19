@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-from hand.http.login_website import *
+from handy.http.login_website import *
 import os
 
 

@@ -109,3 +109,6 @@ venv.bak/
 
 # Mac
 .DS_Store
+
+__pycache__
+.md.html

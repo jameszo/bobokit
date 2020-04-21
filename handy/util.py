@@ -1,34 +1,8 @@
-# -*- coding: UTF-8 -*-
+#!/usr/bin/env python3
 
-# author:   BoBoBo 
-# email:    bobobonet@hotmail.com
-
-
-import ConfigParser
-import logging
-import logging.config
 import json
 import datetime
 import re
-
-logger = None
-
-def init_cfg:
-    cfg = None
-
-    def cfg(cfg_file="conf.properties"):
-        if None == cfg:
-            cfg = ConfigParser.ConfigParser()
-            cfg.read(cfg_file)
-            logging.config.fileConfig(cfg_file)
-        log_lvl = cfg.get("log", "level")
-    if "debug" == log_lvl:
-        logger = logging.getLogger("debugr")
-    else:
-        logger = logging.getLogger("root")
-        logger.info("Cfg is read.")
-
-def init_logger(cfg_file="conf.properties"):
 
 def combine_seqmap(key, sp1, sp2):
     seqmap = []

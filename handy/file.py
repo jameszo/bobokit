@@ -1,17 +1,8 @@
-# -*- coding: UTF-8 -*-
-
-"""
-    author:   BoBoBo
-    email:    bobobonet@hotmail.com 
-"""
+#!/usr/bin/env python3
 
 import os
 import codecs
 import sys
-
-if sys.getdefaultencoding() != 'utf-8':
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
 
 def traverse_file(path, deal):
     for file_path in list(map(os.path.join(path, f), os.listdir(path))):

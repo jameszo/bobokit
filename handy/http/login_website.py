@@ -27,6 +27,9 @@ def login_github(username, passwd):
     return session, cookies
 
 def login_zhihu(email, passwd):
+    """
+    Just an example, not tested.
+    """
     session = requests.Session()
 
     i1 = session.get(

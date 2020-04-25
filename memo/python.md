@@ -1,5 +1,23 @@
 # Python Program Memo
 
+## data
+
+```
+type(1)
+isinstance(1, int)
+float(2)
+int(2.5)
+11//2
+fractions.Fraction(1, 3)
+math.pi
+slice
+[n if n > 0 else 0 for n in mylist]
+[n for n in mylist if n > 0]
+(n for n in mylist if n > 0)
+list(filter(is_int, values))
+compress()
+```
+
 ## file
 
 ```

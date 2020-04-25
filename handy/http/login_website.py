@@ -5,7 +5,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
-from hand.image import captcha
+from handy.image import captcha
 
 def login_github(username, passwd):
     session = requests.Session()
@@ -28,7 +28,7 @@ def login_github(username, passwd):
 
 def login_zhihu(email, passwd):
     """
-    Just an example, not tested.
+    Just an example, do not work.
     """
     session = requests.Session()
 

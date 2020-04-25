@@ -1,0 +1,12 @@
+ARG centos_version=8
+FROM centos:$centos_version
+# needed to do again after FROM due to docker limitation
+ARG centos_version
+
+WORKDIR ~/code
+
+RUN yum install -y git  \
+    vim \
+    epel-release
+
+

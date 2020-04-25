@@ -4,14 +4,6 @@ import json
 import datetime
 import re
 
-def combine_seqmap(key, sp1, sp2):
-    seqmap = []
-    for s1 in sp1:
-        for s2 in sp2:
-            if s2[key] == s1[key]:
-                seqmap = seqmap + [dict(s2, **s1)]
-    return seqmap
-
 def json_dump(data):
     class DateEncoder(json.JSONEncoder):
         def default(self, obj):
@@ -24,7 +16,7 @@ def json_dump(data):
     
     return json.dumps(data, cls=DateEncoder)
 
-def dealPlaceholder(self, s):
+def deal_placeholder(self, s):
     matches = re.findall(r'\${[^}]*}', s)
     for m in matches:
         if None == m : break

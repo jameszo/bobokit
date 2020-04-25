@@ -13,7 +13,7 @@ class TestLoginWebsite(unittest.TestCase):
     def tearDown(self):
         pass
 
-    @unittest.skip('No need right now.')
+    @unittest.skip('Have been tested.')
     def test_github(self):
         username = os.environ['test_login_github_username']
         passwd = os.environ['test_login_github_passwd']

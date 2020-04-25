@@ -1,9 +1,4 @@
-# -*- coding: UTF-8 -*-
-
-"""
-    author:   BoBoBo
-    email:    bobobonet@hotmail.com 
-"""
+#!/usr/bin/env python3
 
 import unittest
 import os
@@ -26,6 +21,6 @@ class TestFile(unittest.TestCase):
     def tearDown(self):
         shutil.rmtree(TEST_DIR)
 
-    def test_traverse_file(self):
+    def test_traverse_line(self):
         pass
 

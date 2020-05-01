@@ -32,27 +32,3 @@ def make_win32_copy(file_path, copy_path):
         line = fo.readline()
     fo.close()
 
-class File:
-    def __init__(self, file_path, access_mode='a'):
-        self.fo = open(file_path, access_mode)
-        (path, file_name) = os.path.split(file_path);  
-        (shortname, extension) = os.path.splitext(file_name);  
-        self.file_path = file_path
-        self.path = path
-        self.file_name = file_name
-        self.shortname = shortname
-        self.extension = extension
-
-    def write_by_line(self, line, flush_now):
-        line = line + os.linesep
-        self.fo.write(line)
-        if flush_now:
-            self.fo.flush()
-
-    def flush_file(self):
-        self.fo.flush()
-
-    def close(self):
-        flush_file()
-        self.fo.close()
-

@@ -61,5 +61,9 @@ re.split(r'[;,\s]\s*', line)
 ## IO
 
 ```
+fo = open(file_path, access_mode)
+(path, file_name) = os.path.split(file_path);  
+(shortname, extension) = os.path.splitext(file_name);  
+
 os.remove(path)
 ```

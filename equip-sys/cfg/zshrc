@@ -12,7 +12,7 @@ plugins=(git autojump)
 
 alias tree="find . ! -path '*svn*' ! -path '*lib*' ! -path '*target*' ! -path '*class' ! -path '*pyc' ! -path '*idea*' ! -path '*swp' ! -path '*iml' | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-export PATH="${HOME}/code/bobokit/daily:${HOME}/code/bobokit/sh:$PATH"
+export PATH="${HOME}/code/bobokit/handy/shell:${HOME}/code/bobokit/sh:$PATH"
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8

@@ -621,6 +621,10 @@ compress()
 
 re.split(r&#39;[;,\s]\s*&#39;, line)</code></pre>
 <h2 id="io">IO</h2>
-<pre><code>os.remove(path)</code></pre>
+<pre><code>fo = open(file_path, access_mode)
+(path, file_name) = os.path.split(file_path);  
+(shortname, extension) = os.path.splitext(file_name);  
+
+os.remove(path)</code></pre>
 </body>
 </html>

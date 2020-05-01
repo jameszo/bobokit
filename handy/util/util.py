@@ -3,6 +3,22 @@
 import json
 import datetime
 import re
+from collections import deque
+
+def dedupe(items, key=None):
+    check = set()
+    for item in items:
+        val = item if key is None else key(item)
+        if not val in check:
+            yield val
+            check.add(val)
+
+def search_with_history(lines, pattern, history=5):
+    pre_lines=deque(maxlen=5)
+    for line in lines:
+        if pattern in line:
+            yeild line, pre_lines
+        pre_lines.append(line)
 
 def json_dump(data):
     class DateEncoder(json.JSONEncoder):

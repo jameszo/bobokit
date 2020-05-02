@@ -56,6 +56,8 @@ list(filter(is_int, values))
 compress()
 
 re.split(r'[;,\s]\s*', line)
+
+with patch('sys.stdout', new=StringIO()) as fake_out:
 ```
 
 ## IO

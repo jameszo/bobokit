@@ -619,7 +619,9 @@ math.pi
 list(filter(is_int, values))
 compress()
 
-re.split(r&#39;[;,\s]\s*&#39;, line)</code></pre>
+re.split(r&#39;[;,\s]\s*&#39;, line)
+
+with patch(&#39;sys.stdout&#39;, new=StringIO()) as fake_out:</code></pre>
 <h2 id="io">IO</h2>
 <pre><code>fo = open(file_path, access_mode)
 (path, file_name) = os.path.split(file_path);  

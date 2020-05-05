@@ -3,6 +3,8 @@
 #sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+#export HOMEBREW_NO_AUTO_UPDATE=true
+
 brew install vim
 brew install autojump
 brew cask install dash
@@ -36,8 +38,8 @@ brew cask install google-chrome
 #sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 #defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
-#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-#git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
-#git clone git@github.com:jameszo/snippets.git ~/.vim/snippets
-#git clone git@github.com:jameszo/markdown-css.git ~/markdown-css
-#git clone git@github.com:jameszo/docs.git ~/code/docs
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
+git clone git@github.com:jameszo/snippets.git ~/.vim/snippets
+git clone https://github.com/otsaloma/markdown-css.git ~/markdown-css
+git clone git@github.com:jameszo/docs.git ~/code/docs

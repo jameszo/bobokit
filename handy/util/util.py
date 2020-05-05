@@ -45,3 +45,4 @@ def deal_placeholder(self, s):
             s = s.replace(m, holder_value)
             print "After dealPlaceholder: " + s
     return s
+

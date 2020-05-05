@@ -104,11 +104,10 @@ venv.bak/
 .mypy_cache/
 
 # vim
-.swp
-.swo
+*.swp
+*.swo
 
 # Mac
 .DS_Store
 
-__pycache__
-.md.html
+*.md.html

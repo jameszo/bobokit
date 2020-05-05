@@ -11,12 +11,11 @@ deque(maxlen=history)
 
 heapq.nlargest(3, mylist, key=lambda s: s['price'])
 heapq.heapify(mylist)
-"""
+
 当要查找的元素个数相对比较小的时候，函数 nlargest() 和 nsmallest() 是很 合适的。
 如果你仅仅想查找唯一的最小或最大(N=1)的元素的话，那么使用 min() 和 max() 函数会更快些。
 如果 N 的大小和集合大小接近的时候，通常先排序这个 集合然后再使用切片操作会更快点(sorted(items)[:N] 或者是 sorted(items)[-N:] )。
 需要在正确场合使用函数 nlargest() 和 nsmallest() 才能发挥它们的优势(如果 N 快接近集合大小了，那么使用排序操作会更好些)。
-"""
 
 s=slice(20, 30, 2)
 for i in range(*s.indices(100)):
@@ -57,6 +56,7 @@ compress()
 
 re.split(r'[;,\s]\s*', line)
 ```
+
 
 ## IO
 

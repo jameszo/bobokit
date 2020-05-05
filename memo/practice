@@ -1,0 +1,10 @@
+with open('./data.txt', 'rt') as f:
+    str = f.read()
+
+with open('./data.txt', 'rt') as f:
+    for line in f:
+        print(line)
+
+with open('./data.txt', 'wt') as fo:
+    fo.write("abc")
+    fo.write("efg")

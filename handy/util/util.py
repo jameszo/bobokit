@@ -4,6 +4,9 @@ import json
 import datetime
 import re
 from collections import deque
+from functools import wraps
+import time
+from contextlib import contextmanager
 
 def dedupe(items, key=None):
     check = set()
@@ -46,3 +49,21 @@ def deal_placeholder(self, s):
             print "After dealPlaceholder: " + s
     return s
 
+def timefunc(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        r = func(*args, **kwargs)
+        end = time.perf_counter()
+        print('{}.{} cost: {}', func.__module__, func.__name__, end-start)
+        return r
+    return wrapper
+
+@contextmanager
+def timeblock(label):
+    start = time.perf_counter()
+    try:
+        yield
+    finally:
+        end = time.perf_counter()
+        print('{} cost: {}', label, end - start)

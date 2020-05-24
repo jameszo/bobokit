@@ -1,12 +1,25 @@
-ARG centos_version=8
+ARG centos_version=7
 FROM centos:$centos_version
 # needed to do again after FROM due to docker limitation
 ARG centos_version
 
-WORKDIR ~/code
+RUN locale
+RUN localedef -i zh_CN -c -f UTF-8 zh_CN.UTF-8
+RUN echo "export LC_ALL=zh_CN.UTF-8" >> /etc/profile && source /etc/profile
+ENV LANG zh_CN.UTF-8
+ENV LC_CTYPE zh_CN.UTF-8
 
 RUN yum install -y git  \
     vim \
-    epel-release
+    subversion \
+    maven
 
+COPY ./bobokit /root/code/bobokit
+COPY ./.vim /root/.vim
+COPY ./markdown-css /root/markdown-css
+COPY ./docs /root/code/docs
 
+RUN cp /root/code/bobokit/equip/cfg/zshrc /root/.zshrc \
+    && cp /root/code/bobokit/equip/cfg/vimrc /root/.vimrc
+
+WORKDIR /var/code

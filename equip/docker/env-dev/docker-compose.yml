@@ -1,14 +1,18 @@
-version: "3"
+version: "3.6"
 
 services:
   nexus:
     image: sonatype/nexus3
-    container_name: nexus
     ports:
       - "8081:8081"
-      - "8082:8082"
-      - "8083:8083"
-      - "8084:8081"
-      - "8085:8085"
-
-
+  mysql:
+    image: mysql:5.7
+    secrets:
+      - mysql_root_passwd
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root_passwd
+    ports:
+      - "3306:3306"
+secrets:
+  mysql_root_passwd:
+    external: true

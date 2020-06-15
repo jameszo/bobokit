@@ -23,6 +23,8 @@ gitclone https://github.com/ethereum/go-ethereum.git $dir_rtfsc/go-ethereum
 gitclone https://github.com/spring-projects/spring-framework.git $dir_rtfsc/spring-framework
 gitclone https://github.com/spring-projects/spring-boot.git $dir_rtfsc/spring-boot
 
+gitclone https://github.com/vim/vim.git $dir_rtfsc/vim
+
 #gitclone https://github.com/spring-projects/spring-data-redis.git $dir_rtfsc/spring-data-redis
 #gitclone https://github.com/spring-projects/spring-batch.git $dir_rtfsc/spring-batch
 #gitclone https://github.com/spring-projects/spring-data-jpa.git $dir_rtfsc/spring-data-jpa

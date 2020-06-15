@@ -6,6 +6,14 @@
 #export HOMEBREW_NO_AUTO_UPDATE=true
 
 brew install vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+brew install docker
+brew install docker-machine
+brew install docker-compose
+brew install docker-swarm
+brew install docker-machine-driver-xhyve
+
 brew install autojump
 brew cask install dash
 brew cask install iterm2
@@ -22,13 +30,6 @@ brew install openjdk
 brew install npm
 brew install mysql-connector-c++
 
-brew install docker
-brew install docker-machine
-brew install docker-compose
-brew install docker-swarm
-brew install docker-machine-driver-xhyve
-brew cask install osxfuse
-brew install sshfs
 
 brew cask install firefox
 brew cask install google-chrome
@@ -38,8 +39,10 @@ brew cask install google-chrome
 #sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 #defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Kashomon/vimporter.git ~/.vim/plugin/vimporter
 git clone git@github.com:jameszo/snippets.git ~/.vim/snippets
 git clone https://github.com/otsaloma/markdown-css.git ~/markdown-css
 git clone git@github.com:jameszo/docs.git ~/code/docs
+
+brew cask install osxfuse
+brew install sshfs

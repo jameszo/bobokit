@@ -1,10 +1,6 @@
 version: "3.6"
 
 services:
-  nexus:
-    image: sonatype/nexus3
-    ports:
-      - "8081:8081"
   mysql:
     image: mysql:5.7
     secrets:
@@ -13,6 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root_passwd
     ports:
       - "3306:3306"
+
 secrets:
   mysql_root_passwd:
     external: true

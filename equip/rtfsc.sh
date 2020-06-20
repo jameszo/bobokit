@@ -20,6 +20,7 @@ gitclone https://github.com/titansec/OpenWAF.git $dir_rtfsc/OpenWAF
 gitclone https://github.com/openresty/openresty.git $dir_rtfsc/openresty
 gitclone https://github.com/ethereum/go-ethereum.git $dir_rtfsc/go-ethereum
 
+gitclone https://github.com/netty/netty.git $dir_rtfsc/netty
 gitclone https://github.com/spring-projects/spring-framework.git $dir_rtfsc/spring-framework
 gitclone https://github.com/spring-projects/spring-boot.git $dir_rtfsc/spring-boot
 
